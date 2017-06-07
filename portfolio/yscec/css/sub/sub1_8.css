@@ -1,0 +1,14 @@
+#tableToggle{width:739px;margin-top:30px}
+.tableType .btn{text-align:right;font-family:"nanumB";margin-bottom:9px}
+.tableType table{width:739px;}
+.tableType table th{background:#EBEBEB;border-bottom:1px solid #fff;color:#1E1E1E;padding:0px 0px;line-height:150%;font-family:"nanumB";vertical-align: middle}
+.tableType table tbody{border-top:2px solid #295472;}
+.tableType table td{border-bottom:1px solid #D2D2D2;padding:0px 0px 0px 50px}
+.tableType table td a{float:left;padding:7px 9px}
+
+#major01{margin:30px 0 30px 0}
+.tableType table {width:739px}
+.tableType table thead{padding:30px 30px}
+.tableType table thead tr{border-top:2px solid #295472}
+.tableType table thead tr th{padding:12px 0}
+.tableType table tbody td{vertical-align:middle;}

@@ -1,0 +1,122 @@
+@charset "utf-8";
+#kakaoWrap{width:978px;margin:0 auto}
+#kakaoContent{padding-bottom:30px}
+
+.kakaoHead{position:relative;margin-bottom:9px;padding-top:30px}
+.kakaoHead:after{display:block;clear:both;content:''}
+.kakaoHead .inner{position:relative;height:31px;margin-bottom:15px;padding-top:16px}
+.kakaoHead .kakaologo{float:left;width:62px;height:26px;margin-right:7px;background-position:-6px -3px}
+.kakaoHead .kakaoservicelogo{float:left;width:92px;height:24px;margin-right:14px;background-position:0 -50px}
+.kakaoHead h1{float:left}
+.search{height:31px}
+.search:after{display:block;clear:both;content:''}
+.search .input_wrap{display:block;float:left;width:267px;height:32px;margin-right:4px;background-position:-150px 0}
+.search .search_st{border:none;background:none}
+
+.search .btn_search{display:block;float:left;position:relative;width:39px;height:31px;margin-right:9px;background-position:-100px -25px}
+.search .btn_all_search{display:block;float:left;width:43px;height:16px;margin-top:10px;background-position:-100px 0}
+.search .btn_how{display:block;position:absolute;top:29px;right:5px;width:50px;height:14px;background-position:0 0;font-size:0;line-height:0;text-indent:-9999px}
+
+/* gnb */
+.kakaoHead:after{display:block;clear:both;content:''}
+#kakaoGnb{position:relative;width:978px;height:38px;background:url(../images/head_gnb.png) no-repeat 0 -101px}
+#kakaoGnb ul:after{display:block;clear:both;content:''}
+#kakaoGnb li{float:left;width:100px;height:38px}
+#kakaoGnb li .link{display:block;width:100px;height:38px;background:url(../images/head_gnb.png) no-repeat 0 -101px}
+#kakaoGnb .home .link{width:101px;height:38px;background-position:0 -101px}
+#kakaoGnb .info .link{width:101px;height:38px;background-position:-100px -101px}
+#kakaoGnb .mypage .link{width:101px;height:38px;background-position:-201px -101px}
+#kakaoGnb .benefit .link{width:101px;height:38px;background-position:-302px -101px}
+#kakaoGnb .customer .link{width:101px;height:38px;background-position:-403px -101px}
+
+#kakaoGnb .home .link:hover{width:101px;height:38px;background-position:0 -139px}
+#kakaoGnb .home.on .link{width:101px;height:38px;background-position:0 -139px}
+#kakaoGnb .info .link:hover{width:101px;height:38px;background-position:-100px -139px}
+#kakaoGnb .mypage .link:hover{width:101px;height:38px;background-position:-201px -139px}
+#kakaoGnb .benefit .link:hover{width:101px;height:38px;background-position:-302px -139px}
+#kakaoGnb .customer .link:hover{width:101px;height:38px;background-position:-403px -139px}
+
+#kakaoGnb .gnb_save{display:block;position:absolute;top:10px;right:14px;width:173px;height:17px;background:url(../images/temp/gnb_info.png) no-repeat}
+#kakaoGnb:after{display:block;clear:both;content:''}
+
+#kakaoContent:after{display:block;clear:both;content:''}
+#kakaoContent .cMain:after{display:block;clear:both;content:''}
+#kakaoContent .mSub{float:left}
+#kakaoContent .mSub .thumb_view{overflow:hidden;position:relative;width:728px;height:400px;margin-bottom:9px}
+#kakaoContent .mAside{overflow:hidden;float:right;width:240px;height:585px}
+
+.thumb_view .prev{display:block;float:left;position:absolute;left:13px;bottom:50%;width:23px;height:43px;background-position:0 -175px;font-size:0;line-height:0;text-indent:-9999px}
+.thumb_view .next{display:block;float:left;position:absolute;right:13px;bottom:50%;width:23px;height:43px;background-position:-50px -175px;font-size:0;line-height:0;text-indent:-9999px}
+
+.read_more{position:absolute;top:262px;left:60px;width:110px;height:36px;background-position:0 -120px;font-size:0;line-height:0;text-indent:-9999px}
+
+.thumb_btn{position:absolute;left:50%;bottom:19px}
+.thumb_btn li{float:left;margin-right:5px}
+.thumb_btn .btn_on{display:block;width:12px;height:12px;background-position:0 -225px;font-size:0;line-height:0;text-indent:-9999px}
+.thumb_btn .btn_off{display:block;width:12px;height:12px;background-position:-25px -225px;font-size:0;line-height:0;text-indent:-9999px}
+
+#mArticle{width:727px;height:175px;background:url(../images/list_guide.jpg) no-repeat}
+#mArticle ul:after{display:block;clear:both;content:''}
+#mArticle ul{width:726px;height:173px;border:1px solid #e2e3e4}
+#mArticle ul li{float:left;width:222px;height:155px;padding:20px 0 0 20px}
+
+#mArticle .tit_mileage{width:114px;height:14px;margin-bottom:13px;background-position:0 -125px;font-size:0;line-height:0;text-indent:-9999px}
+#mArticle .tit_acc{width:115px;height:15px;margin-bottom:13px;background-position:0 -150px;font-size:0;line-height:0;text-indent:-9999px}
+#mArticle .tit_detail{width:119px;height:15px;margin-bottom:13px;background-position:0 -175px;font-size:0;line-height:0;text-indent:-9999px}
+
+#mArticle .link_info{display:block;width:69px;height:12px;margin-bottom:7px;background-position:0 -25px}
+#mArticle .link_join{display:block;width:69px;height:12px;background-position:0 -50px}
+#mArticle .link_acc{display:block;width:82px;height:12px;background-position:0 -75px}
+#mArticle .link_detail{display:block;width:82px;height:12px;background-position:0 -100px}
+
+.aside_info{margin-bottom:22px}
+.wrpa_login{margin-bottom:20px;border:1px solid #ebebeb}
+.login{width:200px;padding:20px 19px;background:#fbfbfb}
+.login .information{margin-bottom:15px;text-align:center}
+.login .btn_login{display:block;width:200px;height:38px;text-align:center}
+
+.info_join{width:200px;padding:16px 19px;background:#fbfbfb}
+.info_join .service_join{display:block;width:121px;height:11px;margin-bottom:10px;background-position:0 -375px;font-size:0;line-height:0;text-indent:-9999px}
+.info_join .id_not{display:block;width:113px;height:11px;background-position:0 -400px;font-size:0;line-height:0;text-indent:-9999px}
+
+.tab_list{position:relative}
+.tab_list .wrap_info{width:240px;height:28px;border-bottom:1px solid #d0d1d7}
+.tab_list li{float:left;margin-top:1px}
+.tab_list .tab1{display:block;width:80px;height:28px;background-position:0 0;font-size:0;line-height:0;text-indent:-9999px}
+.tab_list .tab2{display:block;width:80px;height:28px;background-position:-80px -28px;font-size:0;line-height:0;text-indent:-9999px}
+.tab_list .list_more{position:absolute;top:8px;right:11px;width:34px;height:12px;background-position:100% -219px;font-size:11px;color:#8a8d95}
+.tab_list .list_more{}
+
+.txt_list{overflow:hidden;padding:16px 0 0 11px}
+.txt_list li{margin-bottom:3px}
+
+.adisd_bnr{position:relative;width:238px;border:1px solid #ebebeb}
+.adisd_bnr .tit_adisd{width:100px;height:12px;margin:10px 19px;background-position:0 -200px}
+#cEtc{overflow:hidden;padding:11px 12px;border-top:2px solid #999;border-bottom:1px solid #ebebeb;background:#fafafa}
+.mileage_etc li{float:left}
+.mileage_etc .etc_first{display:block;width:81px;height:12px;margin-top:2px;background-position:0 -425px}
+.mileage_etc .txt_line{position:relative;padding:0 10px}
+.mileage_etc .txt_line:after{display:inline-block;position:absolute;top:0;right:0;width:1px;height:11px;background:url(../images/line.png) no-repeat;content:''}
+.mileage_etc .last:after{content:'none'}
+
+.list_event .link_eventetc{display:block;width:238px;height:70px;border-top:1px solid #ebebeb}
+
+.bnr_control{position:absolute;top:9px;right:11px}
+.bnr_control .bnr_number{float:left;margin-right:4px}
+.bnr_control .btn_left{display:block;float:left;width:13px;height:13px;background-position:0 -100px;font-size:0;line-height:0;text-indent:-9999px}
+.bnr_control .btn_right{display:block;float:left;width:13px;height:13px;background-position:-13px -100px;font-size:0;line-height:0;text-indent:-9999px}
+
+#kakaoFoot{text-align:center}
+.wrap_foot{padding-top:20px}
+.wrap_foot .list_foot{overflow:hidden;width:316px;margin:0 auto}
+.wrap_foot li{float:left}
+.wrap_foot .txt_line{position:relative;padding:0 10px}
+.wrap_foot .txt_line:after{display:inline-block;position:absolute;top:0;right:0;width:1px;height:11px;background:url(../images/line.png) no-repeat;content:''}
+.list_foot .last:after{content:'none'}
+
+.txt_copyright{color:#999}
+
+#wrapMinidaum{position:absolute;top:0;left:0;width:100%;height:29px;border-bottom:1px solid #eff0f5}
+.mini{width:978px;margin:0 auto}
+.mini .mini_left{float:left;margin-top:5px}
+.mini .mini_right{margin-top:5px;float:right}

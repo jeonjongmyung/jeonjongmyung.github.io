@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<title>채널 개설 | 마이피플 채널 관리</title>
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+	<div id="kakaoIndex">
+		<a href="#kakaoBody">본문 바로가기</a>
+		<a href="#kakaoGnb">메뉴 바로가기</a>
+	</div>
+	<div id="kakaoWrap">
+		<div id="kakaoHead" class="head_wrap" role="banner">
+			<h1 class="tit_logo"><a href="#none" class="tit_comm tit_manager"><span class="ir_wa">마이피플 채널 관리</span></a></h1>
+		</div>
+	<div id="kakaoContent" class="cont_wrap" role="main">
+		<h2 id="kakaoBody" class="screen_out">마이피플 채널개설 본문바로가기</h2>
+		<div id="mFeature">
+			<h2 class="screen_out">마이피플 채널관리 메뉴</h2>
+			<div id="kakaoGnb" class="list_gnb" role="navigation">
+				<ul class="list_channel">
+					<li class="list_depth1"><a href="#none" class="txt_comm link_home"><span class="ir_pm">처음으로</span></a></li>
+					<li class="list_depth1">
+						<a href="#none" class="txt_comm link_ch"><span class="ir_pm">채널</span></a>
+						<ul class="list_depth2">
+							<li><a href="#none">채널목록</a></li>
+							<li><a href="#none" class="on">채널개설</a></li>
+						</ul>
+					</li>
+					<li class="list_depth1">
+						<a href="#none" class="txt_comm link_message"><span class="ir_pm">채널 메시지</span></a>
+						<ul class="list_depth2">
+							<li><a href="#none">새 메시지 작성</a></li>
+							<li><a href="#none">전체 메시지</a></li>
+						</ul>
+					</li>
+					<li class="list_depth1">
+						<a href="#none" class="txt_comm link_event"><span class="ir_pm">이벤트</span></a>
+						<ul class="list_depth2">
+							<li><a href="#none">이벤트 목록</a></li>
+							<li><a href="#none">이벤트 등록</a></li>
+						</ul>
+					</li>
+					<li class="list_depth1">
+						<a href="#none" class="txt_comm link_stat"><span class="ir_pm">채널 통계</span></a>
+						<ul class="list_depth2">
+							<li><a href="#none">구독 통계</a></li>
+							<li><a href="#none">메시지 통계</a></li>
+							<li><a href="#none">이벤트 통계</a></li>
+						</ul>
+					</li>
+					<li class="list_depth1"><a href="#none" class="txt_comm link_notice"><span class="ir_pm">의견 게시판</span></a></li>
+					<li class="list_depth1">
+						<a href="#none" class="txt_comm link_account"><span class="ir_pm">계정</span></a>
+						<ul class="list_depth2">
+							<li><a href="#none">시스템관리</a></li>
+							<li><a href="#none">채널관리</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- kakaognb -->
+		</div>
+		<!-- mFeature -->
+		<div id="mArticle" class="cont_main">
+			<h2 class="txt_comm tit_opened"><span class="ir_pm">채널 개설</span></h2>
+			<div class="wrap_tab">
+				<ul class="list_tab">
+					<li class="on"><a href="#none" class="link_channel">기본정보</a><span class="screen_out">선택됨</span></li> <!-- 메뉴 활성화시 on 클래스 부여 및 대체텍스트 추가 -->
+					<li><a href="#none" class="link_channel">운영정보</a></li>
+					<li><a href="#none" class="link_channel">채널관리</a></li>
+				</ul>
+			</div>
+			<table summary="기본정보 입력" class="tbl_info">
+				<caption class="screen_out">기본정보</caption>
+				<colgroup>
+					<col width="196px"/>
+					<col width="583px" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row"><label for="chname">채널이름</label></th>
+						<td class="td_type">
+							<div class="area_channel">
+								<input type="text" id="chname" class="inp_tpye01" title="채널이름">
+								<span class="txt_num">0</span>
+								<span class="txt_num">/30자</span>
+								<button type="button" class="btn_comm btn_double_check">중복확인</button>
+							</div>
+							<em class="txt_info">한글, 영문, 숫자만 입력해주세요.</em>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="chid">채널 아이디</label></th>
+						<td class="td_type">
+							<div class="area_channel">
+								<input type="text" id="chid" class="inp_tpye01" title="채널아이디">
+									<span class="txt_num">0</span>
+									<span class="txt_num">/30자</span>
+								<button type="button" class="btn_comm btn_double_check">중복확인</button>
+							</div>
+							<em class="txt_info">한글, 영문, 숫자만 입력해주세요.</em>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">검색 공개</th>
+						<td class="td_type">
+							<input type="radio" id="inopen" name="searchpub" class="radio_pub">
+							<label for="inopen" class="label_type">공개</label>
+							<input type="radio" id="inprivate" name="searchpub" class="radio_pub">
+							<label for="inprivate" class="label_type">비공개</label>
+							<em class="txt_info">(비공개 선택 시 마이피플 채널 검색결과에서 노출되지 않습니다.)</em>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="cate">카테고리</label></th>
+						<td class="td_type">
+							<div class="opt_comm">
+								<select id="cate" class="select_type01">
+	                    				<option>카테고리1</option>
+										<option>카테고리2</option>
+										<option>카테고리3</option>
+										<option>카테고리4</option>
+	                    			</select>
+							</div>
+							<!-- opt_comm -->
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="cahnnel_intro">소개글</label></th>
+						<td class="td_type">
+							<textarea name="" id="cahnnel_intro" cols="30" rows="10" title="소개글 입력" style="width:361px;height:68px;resize:none;border:1px solid #cacaca" class="box_intro"></textarea>
+							<div class="area_byte">
+								<span class="txt_num">0</span>
+								<span class="txt_num">/30자</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">대표 이미지</th>
+						<td class="td_type">
+							<div class="thumb"><img src="" alt="" style="width:80px;height:86px;background:pink"></div>
+							<div class="thumb_content">
+								<input type="text" id="" class="inp_tpye03">
+								<label for="chfind" class="btn_comm btn_search" title="찾아보기">찾아보기
+									<input type="file" id="chfind" class="chfile">
+								</label>
+                            <p class="txt_info">가로 150px, 용량 1mb 이내 (jpg,gif,png,bmp)</p>
+				            </div>
+				            
+				        </td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="chsite">홈페이지</label></th>
+							<td class="td_type">
+								<input type="text" id="chsite" class="inp_tpye01" title="홈페이지 입력">
+								<span class="txt_num">0</span>
+								<span class="txt_num">/20자</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">채널 상세 설정</th>
+							<td class="td_type">
+								<input type="radio" id="chuse" name="chmore" class="radio_pub">
+								<label for="chuse" class="label_type">사용</label>
+								<input type="radio" id="chunused" name="chmore" class="radio_pub">
+								<label for="chunused" class="label_type">미사용</label>
+								<div class="inner_detail">
+									<div class="detail_standard">
+										<label for="destandard" class="inp_detail">1.상세 설정 기준</label>
+										<input type="text" id="destandard" class="inp_tpye04">
+									</div>
+									<div class="detail_item">
+										<div>
+										<label for="deitem" class="inp_item">2.상제 설정 항목</label>
+										<input type="text" id="deitem" class="inp_tpye05">
+										<button type="button" name="button" class="btn_comm btn_add">추가</button>
+									</div>
+										<label for="deitem" class="inp_item">2.상제 설정 항목</label>
+										<input type="text" id="deitem" class="inp_tpye05">
+										<button type="button" name="button" class="btn_comm btn_add">추가</button>
+									</div>
+								</div>
+								<!-- inner_detail -->
+							</td>
+							<!-- inner_detail -->
+						</tr>
+						<tr>
+							<th scope="row">의견 보내기</th>
+							<td class="td_type">
+								<input type="checkbox" id="chpermit" class="">
+								<label for="chpermit">허용함</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="cate1">메세지 발송 주기</label></th>
+							<td class="td_type">
+								<span>월</span>
+								<select id="cate1" class="select_type02">
+	                    				<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+	                    			</select>
+								<span>회 허용</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">목록 노출</th>
+							<td class="td_type">
+								<div>
+									<input type="radio" id="exposure01" name="exposure" class="radio_pub">
+									<label for="exposure01" class="label_type">공개</label>
+									<input type="radio" id="exposure02" name="exposure" class="radio_pub">
+									<label for="exposure02" class="label_type">비공개</label>
+									<input type="radio" id="exposure03" name="exposure" class="radio_pub">
+									<label for="exposure03" class="label_type">NEW</label>
+									<input type="radio" id="exposure04" name="exposure" class="radio_pub">
+									<label for="exposure04" class="label_type">HOT</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class="line_last">채널 종류</th>
+							<td class="td_type line_last">
+								<div>
+									<input type="radio" id="chtype01" name="chtype" class="radio_pub">
+									<label for="chtype01" class="label_type">제휴</label>
+									<input type="radio" id="chtype02" name="chtype" class="radio_pub">
+									<label for="chtype02" class="label_type">일반</label>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="wrap_btn">
+					<button type="sumit" class="btn_comm btn_yes" name="done">완료</button>
+					<button type="reset" class="btn_comm btn_no" name="cancel">취소</button>
+				</div>
+				<!-- wrap_btn -->
+
+				<!-- wrap_tab -->
+			</div>
+			<!-- mArticle -->
+
+		</div>
+		<!-- kakaoContent -->
+		<div id="wrapMinidaum" class="login_info">
+			<strong class="login_name">마이피플님</strong>
+				<span class="txt_bar">|</span>
+				<a href="#none" class="icon_comm link_short">바로가기</a>
+				<a href="#none" class="btn_comm link_btn">로그아웃</a>
+		</div>
+		<!-- wrapMinidaum -->
+	</div>
+
+	</body>
+	</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>daum | 캐쉬충전</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    <div id="kakaoIndex">
+		<a href="#kakaoBody">본문 바로가기</a>
+		<a href="#kakaoGnb">메뉴 바로가기</a>
+	</div>
+
+<div id="kakaoWrap" class="wrap_main">
+    <div id="kakaoHead" class="head_wrap" role="banner">
+        <div class="head_info">
+    		<h1 class="tit_daum">
+    			<a href="#none" id="daumLogo" class="link_daum"><img src="http://m1.daumcdn.net/svc/image/U03/common_icon/526776B4042520000A" width="47" height="22" alt="Daum"></a>
+    			<a href="#none" id="daumServiceLogo" class="link_service"><span class="tit_service">캐쉬충전</span></a>
+    		</h1>
+    		<strong class="screen_out">관련 서비스</strong>
+    		<div class="wrap_util">
+    			<a href="#none" id="kakaoGnb" class="link_util"><span class="ico_comm ico_all">전체서비스</span></a>
+    		</div>
+	    </div>
+    </div>
+    <div id="kakaoContent" class="cont_main" role="main">
+        <div class="main_wrap">
+            <div class="info_head">
+                <div class="mycash_info">
+                    <span class="my_cash">내 캐쉬</span>
+                    <span class="my_money">500,000원</span>
+                </div>
+                <button type="button" class="btn_mypage">내 결제내역</button>
+            </div>
+            <!-- info_head -->
+            <form action="" class="tf_date">
+                <fieldset>
+                    <legend class="screen_out">캐쉬 충전결재 선택</legend>
+                <div class="select_date">
+                    <div class="box_amount">
+                        <strong class="txt_info">충전금액 선택</strong>
+                        <span class="desc_txt">결제수단별 한도</span>
+                    </div>
+                    <div class="box_date">
+                        <div class="info_choose">
+                            <input type="radio" id="chooseAmount" class="inp_choose" name="chk_info">
+                            <label for="chooseAmount" class="ico_comm lab_check">금액선택</label>
+                            <div class="opt_league">
+                                <div class="screen_out">금액선택</div>
+                                    <span class="screen_out">선택내용 : </span>
+                                        <a href="#none" class="link_selected">10,000</a>
+                                    <input type="hidden" value="10,000">
+                                    <select class="opt_choose">
+                                        <option value="10,000">10,000</option>
+                                        <option value="20,000">20,000</option>
+                                        <option value="30,000">30,000</option>
+                                    </select>
+                            </div>
+                            <span class="txt_won">원</span>
+                        </div>
+                        <div class="info_choose">
+                            <input type="radio" id="directInput" class="inp_choose" name="chk_info">
+                            <label for="directInput" class="ico_comm lab_check">직접입력</label>
+                                <div class="input_wrap"><input type="text" class="inp_st"></div>
+                                <span class="txt_won">원</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="select_date select_payment">
+                    <div class="box_amount">
+                        <strong class="txt_info">결제수단 선택</strong>
+                        <span class="desc_txt">주의사항</span>
+                    </div>
+                    <div class="box_date">
+                        <div class="info_choose">
+                            <input type="radio" id="chooseCellphone" class="inp_choose" name="chk_choose">
+                            <label for="chooseCellphone" class="ico_comm lab_check">휴대폰</label>
+                        </div>
+                        <div class="info_choose">
+                            <input type="radio" id="easyPayment" class="inp_choose" name="chk_choose">
+                            <label for="easyPayment" class="ico_comm lab_check">신용카드</label>
+                        </div>
+                        <div class="info_choose" style="clear:both">
+                            <input type="radio" id="creditCard" class="inp_choose" name="chk_choose">
+                            <label for="creditCard" class="ico_comm lab_check">Daum간편결제</label>
+                        </div>
+                        <div class="info_choose">
+                            <input type="radio" id="bankTransfer" class="inp_choose" name="chk_choose">
+                            <label for="bankTransfer" class="ico_comm lab_check">무통장입금</label>
+                        </div>
+                        <div class="info_choose">
+                            <input type="radio" id="chooseAmount" class="inp_choose" name="chk_choose">
+                            <label for="chooseAmount" class="ico_comm lab_check"></label>
+                            <div class="opt_league">
+                                <div class="screen_out">금액선택</div>
+                                    <span class="screen_out">선택내용 : </span>
+                                        <a href="#none" class="link_selected link_card">도서문화상품권</a>
+                                    <input type="hidden" value="10,000">
+                                    <select class="opt_choose">
+                                        <option value="10,000">10,000</option>
+                                        <option value="20,000">20,000</option>
+                                        <option value="30,000">30,000</option>
+                                    </select>
+                            </div>
+                            <span class="txt_won">원</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- select_box -->
+                <div class="info_check">
+                    <input type="checkbox" id="infoAgree" class="inp_check">
+                    <label for="infoAgree" class="ico_comm lab_check">결제정보 수집 및 이용에 동의합니다.</label>
+                </div>
+                    </fieldset>
+                </form>
+
+                <div class="wrap_btn">
+                  <div class="inner_btn">
+                      <a href="#" class="link_refuse"><span class="btn_cancel">최소</span></a>
+                  </div>
+                  <div class="inner_btn">
+                      <a href="#" class="link_refuse"><span class="btn_next">다음 ></span></a>
+                  </div>
+             </div>
+        </div>
+    </div>
+    <!-- cont_main -->
+    <div id="kakaoFoot" class="foot_wrap" role="contentinfo">
+        <ul class="list_foot">
+            <li><a href="#none" class="btn_foot">Daum</a></li>
+            <li><a href="#none" class="btn_foot">로그인</a></li>
+            <li><span class="btn_foot btn_off">PC화면</span></li> <!-- 비활성 상태인 경우 btn_off 클래스 추가 및 span태그로 변경 -->
+            <li><a href="#none" class="btn_foot">전체보기</a></li>
+        </ul>
+        <small class="copr_info">
+            <span class="info_policy">
+                <a href="#none" class="link_policy"> 고객센터</a>
+                <a href="#none" class="link_policy"> 전화 1588-3321</a>
+            </span>
+            <a href="#none" class="link_daumcorp">&copy; Daum</a>
+        </small>
+    </div>
+    <div id="wrapMinidaum"></div><!-- //position:absolute로 상단 위치. -->
+</div>
+
+
+</body>
+</html>
