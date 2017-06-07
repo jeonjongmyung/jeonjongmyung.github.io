@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
+fieldset,img{border:0 none}
+dl,ul,ol,menu,li{list-style:none}
+blockquote, q{quotes:none}
+blockquote:before, blockquote:after,q:before, q:after{content:'';content:none}
+input,select,textarea,button{vertical-align:middle}
+input::-ms-clear{display:none}
+button{border:0 none;background-color:transparent;cursor:pointer}
+body{background:#fff}
+body,th,td,input,select,textarea,button{font-size:12px;line-height:1.5;font-family:'돋움',dotum,sans-serif;color:#333}
+a{color:#333;text-decoration:none}
+a:active, a:hover{text-decoration:underline}
+a:active{background-color:transparent}
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
+/* global */
+#kakaoIndex{overflow:hidden;position:absolute;left:-9999px;width:0;height:1px;margin:0;padding:0}
+.ir_wa{display:block;overflow:hidden;position:relative;z-index:-1;width:100%;height:100%}
+.ir_pm{display:block;overflow:hidden;font-size:0px;line-height:0;text-indent:-9999px}
+.screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+.hide{display:none}
+/* Background Image */
+.btn_comm{overflow:hidden;background:url(../images/btn_comm.png) no-repeat 0 0;text-indent:-9999px}
+.icon_comm{background:url(../images/icon_comm.png) no-repeat 0 0}
+.tit_comm{display:block;background:url(../images/txt_comm.png) no-repeat 0 0;font-size:0;line-height:0;text-indent:-9999px}
+.txt_comm{display:block;background:url(../images/txt_comm.png) no-repeat 0 0}
+
+
+/* layout */
+body{}
+.cont_wrap{position:relative;background:url(../images/bg_lnb_list.png) repeat-y}
+.cont_main{width:779px;padding:27px 0 29px 201px}
+.login_info{position:absolute;top:12px;right:9px}
+.list_gnb{position:absolute;top:0;left:0}
+
+/* head */
+.head_wrap{overflow:hidden;height:38px;background:#1d243a;border-bottom:1px solid #3d4256}
+.head_wrap .tit_logo{padding:7px 0 0 13px}
+.head_wrap .tit_manager{width:159px;height:24px}
+
+
+.list_gnb .list_channel{padding:30px 15px 0 15px;z-index:10}
+.list_channel .list_depth1{padding:15px 0;width:140px;background:url(../images/lnb_line.png) no-repeat 0 bottom}
+.list_channel .list_depth2 .on{font-weight:bold;color:#53abe7;text-decoration:underline}
+
+.list_channel .link_home{width:49px;height:13px;background-position:0 -25px}
+.list_channel .link_ch{width:24px;height:13px;background-position:0 -50px}
+.list_channel .link_message{width:65px;height:13px;background-position:0 -75px}
+.list_channel .link_event{width:37px;height:13px;background-position:0 -100px}
+.list_channel .link_stat{width:53px;height:14px;background-position:0 -125px}
+.list_channel .link_notice{width:66px;height:13px;background-position:0 -150px}
+.list_channel .link_account{width:23px;height:14px;background-position:0 -175px}
+.list_channel .list_depth2{margin-top:9px}
+
+.cont_main .tit_opened{width:67px;height:17px;margin-bottom:13px;background-position:0 -200px}
+
+/* tab */
+.list_tab{overflow:hidden;height:34px;margin-bottom:13px;background:url(../images/tab_bg.png) repeat-x;border-top:2px solid #585f6f;border-right:1px solid #cdcdcd}
+.list_tab li{float:left}
+.list_tab .link_channel{float:left;width:48px;height:24px;padding:10px 24px 0 24px;border-left:1px solid #e4e4e4;font-weight:bold;color:#888;text-align:center;letter-spacing:-1px}
+.list_tab .on .link_channel{margin-right:-1px;border-right:1px solid #cdcdcd;color:#53abe7;border-left:1px solid #cdcdcd;background-color:#fff}
+
+
+/*input layout*/
+.inp_tpye01{float:left;display:block;width:358px;height:19px;border:1px solid #cacaca;margin:0 10px 0 0}
+.inp_tpye02{float:left;display:block;width:195px;height:19px;border:1px solid #cacaca;margin:0 10px 0 0}
+.inp_tpye03{float:left;display:block;width:197px;height:19px;border:1px solid #cacaca;margin:0 5px 0 0}
+.inp_tpye04{display:block;width:115px;height:19px;border:1px solid #cacaca;margin:0 10px 0 0}
+.inp_tpye05{float:left;display:block;width:143px;height:19px;border:1px solid #cacaca;margin:0 5px 0 0}
+
+.select_type01{width:142px;height:21px;border:1px solid #ccc}
+.select_type02{width:73px;height:21px;border:1px solid #ccc}
+
+
+/* tbl input */
+.tbl_info .area_channel{overflow:hidden}
+.tbl_info .txt_num{float:left;margin-top:4px;color:#8e8e8e}
+.area_channel .btn_double_check{width:61px;height:22px;background-position:-51px -30px;margin-left:10px}
+
+
+.tbl_info{overflow:hidden;width:779px;margin-bottom:17px;border-spacing:0;border-bottom:1px solid #c7c7c7}
+.txt_info{font-size:11px;line-height:20px;letter-spacing:-1px;color:#8e8e8e;margin-top:-1px}
+th{border:0 none;border-bottom:1px solid #f4f4f4;text-align:left;padding-left:24px;letter-spacing:-1px;line-height:14px}
+.td_type{border:0 none;padding:15px 0;border-bottom:1px solid #f4f4f4}
+.radio_pub{margin-top:1px}
+.label_type{margin:0 13px 0 7px}
+.box_intro{float:left;width:361px;height:68px;resize:none;border:1px solid #cacaca;margin-right:10px}
+.area_byte{float:left;margin-top:54px}
+.thumb{float:left;width:100px}
+
+.thumb_content{float:left;width:300px;overflow:hidden}
+.thumb_content .inp_tpye04{float:left}
+.thumb_content .btn_search{float:left;width:61px;height:24px;background-position:-130px 0}
+.thumb_content .chfile{overflow:hidden;width:0;text-indent:-9999px}
+.thumb_content .txt_info{clear:both}
+
+.cont_main .inner_detail{clear:both}
+.inner_detail .detail_standard{float:left;width:224px}
+.detail_standard .inp_detail{margin:3px 7px 0 0}
+.inner_detail .detail_item{float:left;width:306px}
+.detail_item .btn_add{width:47px;height:22px;background-position:0 -30px}
+.detail_item .inp_item{float:left;margin:3px 7px 0 0}
+
+/*line_last*/
+.tbl_info .line_last{border-bottom:none}
+
+/*wrapMinidaum*/
+.login_info .login_name{float:left;padding-right:10px;color:#b6bac5}
+.login_info .txt_bar{float:left;color:#4b5266}
+.login_info .link_short{display:block;float:left;margin-left:10px;padding-right:17px;color:#9aa2ac;line-height:18px;background-position:45px -20px}
+.login_info .link_btn{display:block;float:left;width:52px;height:20px;background-position:0 0;margin-left:10px;margin-top:-3px}
+/*btn*/
+.wrap_btn{overflow:hidden;text-align:center}
+.wrap_btn .btn_yes{width:60px;height:30px;background-position:-60px 0}
+.wrap_btn .btn_no{width:60px;height:30px;background-position:-120px -30px}

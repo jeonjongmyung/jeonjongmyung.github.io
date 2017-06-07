@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<style type="text/css">
+	html,body{width:100%;height:100%}
+	html{overflow-y:scroll;font-size:10px}
+	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,button{margin:0;padding:0}
+	body,h1,h2,h3,h4,input,button{font-family:Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;font-size:12px;color:#383d41}
+	body{background-color:#fff;text-align:left;*word-break:break-all;-ms-word-break:break-all}
+	img,fieldset,iframe{border:0 none}
+	li{list-style:none}
+	input,select,button{vertical-align:middle}
+	img{vertical-align:top}
+	i,em,address{font-style:normal}
+	label,button{cursor:pointer}
+	button{margin:0;padding:0}
+	a{color:#222;text-decoration:none}
+	a:hover{color:#390;text-decoration:underline}
+	button *{position:relative}
+	button img{left:-3px;*left:auto}
+	html:first-child select{height:20px;padding-right:6px}
+	option{padding-right:6px}
+	hr{display:none}
+	legend{*width:0}
+	table{border-collapse:collapse;border-spacing:0}
+	input::-ms-clear{display:none}
+	.exam{background:beige;margin-bottom:30px}
+	.qna{margin-bottom:10px;}
+	</style>
+</head>
+<body>
+	<div class="exam">
+		<div class="qna">
+			<h1>1.이 문서의 독타입을 말하시오 </h1>
+			<pre><!doctype html> html5의 독타입</pre>
+			<p>면접관의 질문 - 왜 이게 html5의 독타입이며 이 독타입을 쓰는 이유는 무엇이고 이 독타입을 쓰지 않으면 무슨일이 일어나나요?</p>
+			<p>답변 : 독타입을 사용하지 않으면 브라우저가 렌더링할때 표준의 렌더링을 하지 않을 수 있다. </p>
+		</div>
+		<div class="qna">
+			<h1>2.이 문서에서 li 의 width 및 height 값을 말하시오</h1>
+			<p>현재 css 쓰여져 있는 값음 width:150 에 height:30 이지만 padding 값이 있기 때문에 실제 브라우저에서 보이는
+				width와 height 값은 150+padding width 와 height+padding 값 입니다.</p>
+			<p>정확히 padding 값이 padding:5px 5px 65px 5px 이었음</p>
+		</div>
+		<div class="qna">
+			<h1>3. 이 문서에서 li의 갯수는 몇개입니까?</h1>
+			<p>이 문서에서 마크업된 li의 개수는 1개 이지만 php 의 반복문에서 i=0 ,i<6 이라고 씋여져 있으므로  
+				실제로 사용자의 화면에 보여지는 li 의 개수는 6개 입니다.
+			</p>
+		</div>
+		<div class="qna">
+			<h1>4. Image sprite 기법은 무엇입니까?(IS 기법은 무엇입니까?)</h1>
+			<p>조각난 이미지 파링들을 하나로 병합 후 배경으로 처리해서 웹 문서 전송 속도를 높이는 기법입니다. 이 때 의미가 있는 이미지는 전경에 상응하는 텍스트를 포함시켜서 접근성을 확보해야 하기 때문에
+				IR(Image replacement) 기법이 함께 사용 됩니다.</p>
+		</div>
+		<div class="qna">
+			<h1>5. position fixed, position absolute , position relative , position static 이 무엇인가요?</h1>
+			<p>1.position fixed는 엘리먼트의 위치를 브라우저 기준으로 정한다. position:absolute와 같이 z-index를 가지고 있고 겹침의 우위를 정할수 있다.
+				2.position:absolute는 엘리먼트의 위치를 문서의 흐름과 상관없이 위치를 지정할 수 있다. 상위 요소에 position:relative를 가진게 없으면
+				위치는 html을 기준으로 설정된다.z-index를 사용하여 absolute인 요소끼리 겹칠수 있다
+				3.position:relative는 엘리먼트의 위치를 문서의 흐름대로 정렬되는 것이다. 자식 요소에 position:absolute를 가진 엘리먼트가 있으면
+				자식의 위치는 relative를 가진 엘리먼트를 기준으로 정렬된다.
+				4.position:static은 초기값이다.
+				
+				참고 : http://aboooks.tistory.com/82
+			</p>
+		</div>
+		<div class="qna">
+			<h1>6. 부모가 가진 속성중 자식에게 상속되는 것은?</h1>
+			<p>답은 기억나지 않음. font 관련된건 무조건 다 상속되고 list-style 과 line height는 상속됨</p>
+		</div>
+		<div class="qna">
+			<h1>7.뉴스보고 코딩하기</h1>
+			<pre>
+					section
+					h1
+					p
+					span
+					article
+						h2
+						p
+					
+				
+			</pre>
+		</div>
+		<div class="qna">
+			<h1>8.자바스크립트 ==과 ===의 차이</h1>
+			<p>==은 값이 같다. ===은 형까지 같다.</p>
+		</div>
+		<div class="qna">
+			<h1>9.동기방식과 비동기방식이란</h1>
+			<p>동기방식은 페이지 이동이 있음 a.html->b.html
+				비동기 방식은 페이지 이동이 없음 -> 예를 들면 팝업 레이어 같은것
+			</p>
+		</div>
+	</div>
+	<div class="qna_pre">
+		<h1>예상질문</h1>
+		<ul>
+			<li>1.블록엘리먼트와 인라인 엘리먼트의 차이가 뭔가요?</li>
+			<li>2.float에 대해 설명하세요</li>
+			<li>3.화면에 보여주는 컨텐츠를 숨기는 방법들은 무엇입니까?</li>
+			
+		</ul>
+	</div>
+	<!-- qna_pre -->
+	<div class="youknow">
+		<h1>1.반응형 분기시에 조건을 어떻게 주는가</h1>
+		<pre>
+		/* All – 모든 해상도에서 해석하는 코드(미디어 쿼리 적용 안 함) */
+		…
+		
+		/* Mobile – 767px 이하 해상도에서 해석하는 코드 */
+		@media (max-width:767px){ … }
+		
+		/* Tablet & Desktop – 768px 이상 해상도에서 해석하는 코드 */
+		@media (min-width:768px){ … }
+		
+		/* Tablet – 768px~1024px 해상도에서 해석하는 코드 */
+		@media (min-width:768px) and (max-width:1024px){ … }
+		
+		/* Desktop – 1025px 이상 해상도에서 해석하는 코드 */
+		@media (min-width:1025px){ … }
+		</pre>
+		<h1>2.UI 개발 마크업 개발에 대한 정의</h1>
+		<p>UI개발 및 마크업 개발은 프론트 엔드 페이지의 기본 골격을 형성하는 작업 입니다 이때 내용의 선형성과 접근성이 보장되어야 합니다. 
+			이 작업은 디자인, 브라우저, 스크립트, 성능, 과 긴밀한 관계가 있고, 이 작업이 잘 되어야 모든 브라우저에서 콘텐츠를 손실 없이, 
+			빠르고 쉽게 사용자에게 전달할 수 있습니다.
+			그리고 장애인을 비롯한 모든 사용자가 차별 없이 누구나 같은 환경에서 웹을 사용 할 수 있습니다.
+			또한 코드를 간결하고 유지보수가 쉽도록 작성하여 유지보수 비용을 절감하고 업무 효율을 높이는 데에도 큰 역할을 하고 있습니다.</p>
+			
+		<h1>3.시맨틱웹</h1>
+		<p>시맨틱 웹은 다른말로 의미론적 마크업이라는 말로도 불립니다. 시맨틱 웹이란 웹 콘텐츠 요소에 가장 적합한 의미의 HTML 코드를 부여해서 데이터가 정보로써의
+			가치를 갖게 된 형태를 말합니다. 시멘틱 마크업은 기계적으로도 해석이 가능하기 때문에 사람의 인지 작용을 돕습니다. 그렇기 때문에 웹 접근성과도 긴밀한
+			관계를 가지고 있습니다. 또한 시멘틱 웹은 검색엔진 최적화(SEO)의 관점에서도 매우 중요합니다. </p>
+		<h1>4.모바일 웹에 관한 에러사항</h1>
+		<p>모바일 웹에 관한 에러사항으로 가장 최근에 발견한 이슈는 아이폰 6+에서 box-shadow 가 적용되지 않는 버그 였습니다. 해결은 이 엘리먼트의 스타일에 border-radius:1px 을 추가함으로써 해결하였습니다.
+			부모에게 translate 나 rotate 가 적용되어 있을때 자식 요소에게 position:fixed가 적용되지 않는 버그를 발견 했습니다. 일부 아이폰 기기에서만 나타나는 현상입니다.
+			해결은 부모에게 적용된 translate 값을 자식에게도 적용하거나 -webkit-transform:translateZ(0) 을 position:fixed 가 적용된 자식에게 적용하는 방법이었습니다. 
+			해결되었으나 일부 버벅거림이 있어서 position:fixed를 absolute로 바꾸었고 스크립트를 이용하여 position:fixed와 같은 기능을 하도록 구현하였습니다.</p>
+		<h1>5.블라인드 텍스트 처리</h1>
+		<pre>1.font-size:0;position:absolute;top:-999999px;
+			 2.display:block;overflow:hidden;position:absolute;top:-1000em;left:0
+			 3.text-indent:-999em;overflow:hidden;display:block; -> 이와 같은 경우는 text-align:right 처리를 했을때 보이는 경우가 발생 함</pre>
+		<h1>6.발견 이슈</h1>
+		<pre>더블마진 이슈 - ie6에서 발생하는 더블마진 플롯버그 float 된 요소에 float 된 방향과 동일한 방향의 margin을 설정하는 경우 margin 값이 두 배로 작용하는 버그 
+			해결 방법은 float 된 방향과 동일한 방향으로 margin을 설정하지 않는다. 더블마진이 적용되는 엘리먼트 에게 display:inline 속성을 줘도된다</pre>
+		<h1>7.float clear 해제시키는 방법</h1>
+		<pre>
+			1. 부모에게 display:inline-block 박스가 끝나는 지점에 공백을 가지게 되므로 옳은 방법이 아님.
+			2. 부모에게 :after 라는 가상 엘리먼트를 생성하여 {content:"";display:block;clear:both}를 주는것
+			3. clear 라는 빈 엘리먼트를 생성하여 빈 엘리먼트에게 {clear:both;height:0;overflow:hidden} 빈 엘리먼트 생성 자체가 좋지 않음
+			4. 부모에게 overflow:hidden 또는 overflow:auto 주는 방법 그러나 자식의 너비가 가변적이고 부모의 너비보다 커지는 상황이 발생할 때 가로 스크롤바를 유발함. overflow:hidden 속성은
+			자식의 너비가 넘치는 경우 넘치는 부분이 잘려버리기 때문에 완전하지 않음 
+			5. 부모에게도 float을 주는 방법 그러나 부모의 크기가 브라우저 크기에 따라서 가변 적일 경우 사용 할수 없으며 여러 조상이 있는 경우 모든 조상에게 float 을 적용 해야 하기 때문에 사용 불가 
+		</pre>
+		<h1>8.input 태그와 label 태그</h1>
+		<pre></pre>
+		<h1>9.hasLayout 이란 </h1>
+		<p>has Layout 이란 '레이아웃을 가진다' 라는 뜻 ie 에만 해당됨</p>
+	</div>
+	<!-- youknow -->
+</body>
+</html>
+

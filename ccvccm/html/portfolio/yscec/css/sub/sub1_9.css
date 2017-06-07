@@ -1,0 +1,22 @@
+.synopsis{width:739px;height:150px; background:#DFEBF7;position:relative}
+.synopsis h4.tit{font-size:20px;color:#324B8C;margin-bottom:10px;width:640px;padding:50px 0 0 50px}
+.synopsis p.desc{color:#505050;padding:0 0 0 50px}
+
+.synopsis .btnType{position:absolute;top:45px;right:52px;width:155px;height:56px;text-align: center;}
+.btnType.typeBig{background:url(../../images/sub1_9/typeBig_bg.jpg) repeat-x;border:1px solid #2A427E;}
+.btnType.typeBig .inner{text-align: center;color:#fff;display:block;padding:8px 10px}
+
+/*연락처*/
+.departmentInfo{width:739px;height:80px;border-top:2px solid #295472;background:#F5F5F5}
+.departmentInfo li.phone{background:url(../../images/sub1_9/ico_department_phone.jpg) no-repeat;width:150px;float:left;padding-left:40px;margin:20px 40px 0 70px}
+.departmentInfo li h5.tit{font-size:15px;margin-bottom:5px}
+.departmentInfo li.phone p.desc{color:#2A427E;font-size:20px;font-family:"nanumB"}
+
+.departmentInfo li.email{background:url(../../images/sub1_9/ico_department_email.jpg) no-repeat;width:150px;float:left;padding-left:40px;margin:20px 40px 0 0}
+
+.departmentInfo li.community{background:url(../../images/sub1_9/ico_department_community.jpg) no-repeat;width:150px;float:left;padding-left:40px;margin:20px 0 0 0}
+
+/*설명글*/
+.graduateTxt{width:739px;margin-top:30px}
+.graduateTxt h4{font-size:14px;color:#2A427E;font-family:"nanumB";padding:0 0 5px 0}
+.graduateTxt p{padding: 0 0 10px 0}

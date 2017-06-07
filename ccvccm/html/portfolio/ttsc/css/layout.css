@@ -1,0 +1,68 @@
+/*skip*/
+.skip{display:block;overflow:hidden;height:1px;width:1px;margin:0 -1px -1px 0;padding:0;font-size:0;line-height:0}
+.skip:hover,
+.skip:active,
+.skip:focus{width:100%;height:auto;margin:0;padding:5px 0;font-weight:bold;font-size:12px;font-family:Tahoma;color:#fff;line-height:1;text-decoration:none !important;text-indent:10px;background:#333;text-align:center}
+
+
+/*header*/
+.headerwrap{width:100%;height:95px}
+.header:after{content: "";display: block;clear: both}
+.header{width:1000px;height:95px;margin:auto;position:relative}
+
+/*topmenu*/
+
+.topmenu{position:absolute;right:0;top:0}
+.topmenu ul{float: left;margin-top:9px}
+.topmenu li{float: left;padding-left:8px;padding-right:8px;}
+.topmenu li a{font-size:11px;color:#666666}
+.topmenu form{float:right}
+/*topmenu로그인*/
+.btn_pack,.keyword,.topsrch{vertical-align: middle}
+span.btn_pack{margin-top:5px;display: block;float: left;margin-right:2px}
+.keyword{height:22px}
+.srch{margin-top:5px}
+.topsrch{width:32px;height:27px;margin-left:-4px}
+/*gnb*/
+.gnbwrap{width:1000px;height:100%}
+/*gnb logo*/
+.gnb h1{width:110px;height:60px;float: left;margin-top:20px}
+.gnb{width:1000px;height:44px}
+.gnb ul{padding-top:60px}
+.gnb ul li a{font-size:14px}
+.gnb ul li.no1{float: left}
+
+.no1 {float: right;padding-left:40px;text-transform: uppercase;}
+.gnb_1{display: none}
+
+
+.visualwrap{width:100%;height:439px}
+.visual{width:1000px;height:439px;margin:auto}
+.slidewrap{width:1000px;height:493px;overflow:hidden}
+
+
+
+/*footer*/
+#footwrap{width:100%;height:100%;border-top:1px solid #d7d7d7;margin-top:50px}
+.footer:after{content: "";display: block;clear: both}
+.footer{width:1000px;height:100%;margin:auto;margin-top:10px;}
+.footer h4{float:left;width:110px;height:60px;margin-right:30px}
+
+.down{margin-left:-10px}
+/*footer컨텐츠*/
+
+.fleft{float:left;width:600px;margin-top:10px}
+.ftxt li{float:left;padding-left:9px;margin-right:9px}
+.ftxt .ftxt_1{background:none;padding-left:0px}
+.ftxt_b{width:450px;}
+.ftxt_b{float: left}
+.ftxt_b li{float:left}
+.ftxt_3{padding-left:10px}
+
+
+.item{float: right;vertical-align: middle;margin:39px -6px 0 0;width:365px;}
+.footerop option{width:150px;height:24px}
+.footer_more{width:147px;height:26px;border:1px solid;text-align: center;float:right;border:1px solid #d7d7d7}
+.footer_more{border-bottom:none}
+.footerop,.ftn_search,.footer_more{vertical-align: middle}
+.ftn_search{margin-right:7px}

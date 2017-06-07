@@ -1,0 +1,7 @@
+.tableWrap{width:729px;margin-bottom:20px}
+.tableWrap table thead th{border:1px solid #cfcfcf;color:#716044;background:#f6f4f0;padding:5px 0 4px 0;vertical-align:middle}
+.tableWrap tbody th{border:1px solid #cfcfcf;color:#716044;background:#f6f4f0;padding:5px 0 4px 0;}
+.tableWrap table td{border:1px solid #cfcfcf;text-align:center;padding:3px 5px;line-height:16px;vertical-align:middle}
+
+
+.tableWrap .tableList{text-align:left}

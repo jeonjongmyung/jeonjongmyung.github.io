@@ -1,0 +1,41 @@
+<nav class="main_nav">
+<a href="#" class="btn_close"><span class="blind">메뉴닫기</span></a>
+<div class="nav_header">
+    <a href="index.html" class="logo"><img src="img/logo.png" alt="티케이션" /></a>
+    <span class="line"></span>
+</div>
+<div class="wrap_gnb">
+    <ul class="gnb">
+        <li class="on"><a href="#">우리는 마케터</a></li>
+        <li><a href="#">우리끼리 야곰야곰</a></li>
+        <li><a href="#">성실한 가족모집</a></li>
+        <li><a href="#">문의 및 미팅하기</a></li>
+        <li><a href="#">편하게 오시는길</a></li>
+        <li><a href="#">마케팅 전략</a>
+            <ul class="sub_nav">
+                <li class="on"><a href="sub01.html">제품마케팅</a></li>
+                <li><a href="sub02.html">척추병원</a></li>
+                <li><a href="sub03.html">성형외과</a></li>
+                <li><a href="sub04.html">한의원</a></li>
+                <li><a href="sub05.html">피부과</a></li>
+                <li><a href="sub06.html">해외고객유치</a></li>
+                <li><a href="sub07.html">안과</a></li>
+                <li><a href="sub08.html">개원 컨설팅</a></li>
+                <li><a href="sub09.html">치과</a></li>
+                <li><a href="sub10.html">이탈고객관리</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</nav>
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+    $(".btn_open").on('click',function(){
+        $(".main_nav").fadeIn('fast')
+        $("body").css("overflow","hidden")
+    })
+    $(".btn_close").on('click',function(){
+        $(this).parent().fadeOut('fast')
+        $("body").css("overflow","visible")
+    })
+</script>
