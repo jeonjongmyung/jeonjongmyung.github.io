@@ -31,101 +31,35 @@
        url(/common/font/NanumGothic-ExtraBold.ttf) format('truetype');
 }
 
-body{margin:0;padding:0;font-family:'Nanum Gothic',나눔고딕,'돋음',Dotum,verdana,AppleGothic,sans-serif;font-weight:400;font-size:13px;line-height:18px;color:#666}
-div,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,p,form,fieldset,input,table,tr,th,td,button,textarea,select{margin:0;padding:0;border:none}
-h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
-ul,ol,dl,dt,dd,li{list-style:none}
-fieldset,img{border:0;vertical-align:middle}
-address,em{font-style:normal}
-table{border-collapse:collapse;width:100%}
-a{color:#000;text-decoration:none}
-caption,legend{visibility:hidden;width:0;height:0;font-size:0;line-height:0}
-input,textarea,select{border:0;background:none;vertical-align:middle}
-button{cursor:pointer}
-.blind,hr,legend{visibility:hidden;overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:100px;white-space:nowrap}
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
+fieldset,img{border:0 none}
+dl,ul,ol,menu,li{list-style:none}
+blockquote, q{quotes:none}
+blockquote:before, blockquote:after,q:before, q:after{content:'';content:none}
+input,select,textarea,button{vertical-align:middle}
+input::-ms-clear{display:none}
+button{border:0 none;background-color:transparent;cursor:pointer}
+body{background:#fff}
+body,th,td,input,select,textarea,button{font-size:16px;line-height:1.5;font-family:'NotoSans Light','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif;color:#666} 
+a{color:#333;text-decoration:none}
+a:active, a:hover{text-decoration:underline}
+a:active{background-color:transparent}
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
+
+/* global */
+#kakaoIndex{overflow:hidden;position:absolute;left:-9999px;width:0;height:1px;margin:0;padding:0} 
+.ir_pm{display:block;overflow:hidden;font-size:1px;line-height:0;text-indent:-9999px} 
+.ir_wa{display:block;overflow:hidden;position:relative;width:100%;height:100%;z-index:-1}
+.screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px} 
+.caption_hide{overflow:hidden;width:1px;height:0.1px;font-size:0px;line-height:0;text-indent:-9999px}
+.show{display:block}
+.hide{display:none}
+.clear_g{display:block;overflow:visible;width:auto;clear:both;*zoom:1}
+.clear_g:after{display:block;visibility:hidden;height:0;font-size:0;clear:both;content:''}
 
 /* skipNavigation */
 #skipNav{position:fixed;top:0;left:0;width:100%;z-index:500}
 #skipNav a{display:block;height:0;font-size:0;width:0}
 #skipNav a:hover, #skipNav a:focus, #skipNav a:active{display:block;padding:9px 0;height:16px;width:100%;text-align:center;background:#f2f2f2;text-align:center;font-size:12px;color:#000;font-weight:bold}
 
-/* 공통 */
-.b{font-weight:bold !important}
-.nf{font-weight:normal !important}
-.nbt{border-top:none !important}
-.nbr{border-right:none !important}
-.nbb{border-bottom:none !important}
-.nbl{border-left:none !important}
-
-/*정렬클래스*/
-.of{overflow:hidden !important}
-.fl{float:left !important}
-.fr{float:right !important} 
-.cl{clear:both !important}
-.lft{text-align:left !important}
-.rgt{text-align:right !important}
-.cnt{text-align:center !important}
-.at{vertical-align:top !important}
-.am{vertical-align:middle !important}
-.ab{vertical-align:bottom !important}
-.dis_b{display:block}
-.dis_n{display:none}
-
-
-/*마진,패딩 클래스*/
-.mt0{margin-top:0 !important}
-.mt05{margin-top:5px !important}
-.mt10{margin-top:10px !important}
-.mt15{margin-top:15px !important}
-.mt20{margin-top:20px !important}
-.mt25{margin-top:25px !important}
-.mt30{margin-top:30px !important}
-.mb0{margin-bottom:0px !important}
-.mb05{margin-bottom:5px !important}
-.mb10{margin-bottom:10px !important}
-.mb15{margin-bottom:15px !important}
-.mb20{margin-bottom:20px !important}
-.mb25{margin-bottom:25px !important}
-.mb30{margin-bottom:30px !important}
-.ml0{margin-left:0 !important}
-.ml05{margin-left:5px !important}
-.ml10{margin-left:10px !important}
-.ml15{margin-left:15px !important}
-.ml20{margin-left:20px !important}
-.ml25{margin-left:25px !important}
-.ml30{margin-left:30px !important}
-.mr0{margin-right:0 !important}
-.mr05{margin-right:5px !important}
-.mr10{margin-right:10px !important}
-.mr15{margin-right:15px !important}
-.mr20{margin-right:20px !important}
-.mr25{margin-right:25px !important}
-.mr30{margin-right:30px !important}
-.pt0{padding-top:0 !important}
-.pt05{padding-top:5px !important}
-.pt10{padding-top:10px !important}
-.pt15{padding-top:15px !important}
-.pt20{padding-top:20px !important}
-.pt25{padding-top:25px !important}
-.pt30{padding-top:30px !important}
-.pb0{padding-bottom:0 !important}
-.pb05{padding-bottom:5px !important}
-.pb10{padding-bottom:10px !important}
-.pb15{padding-bottom:15px !important}
-.pb20{padding-bottom:20px !important}
-.pb25{padding-bottom:25px !important}
-.pb30{padding-bottom:30px !important}
-.pl0{padding-left:0px !important}
-.pl05{padding-left:5px !important}
-.pl10{padding-left:10px !important}
-.pl15{padding-left:15px !important}
-.pl20{padding-left:20px !important}
-.pl25{padding-left:25px !important}
-.pl30{padding-left:30px !important}
-.pr0{padding-right:0 !important}
-.pr05{padding-right:5px !important}
-.pr10{padding-right:10px !important}
-.pr15{padding-right:15px !important}
-.pr20{padding-right:20px !important}
-.pr25{padding-right:25px !important}
-.pr30{padding-right:30px !important}
