@@ -1,35 +1,145 @@
 @charset "utf-8";
-
-/*tbl_comm layout*/
-.tbl_comm .border-right{border-right:0}
-.tbl_comm .item{padding:20px 20px}
-
-
-.header{position:fixed;top:0;left:0;width:100px;background:#fff;padding:30px 20px;}
-.header h1{font-size:20px;line-height:25px}
-.header h1 a{color:#586069}
-.header ul{overflow:hidden;margin-top:15px}
-.header ul li{font-size:13px}
-.header ul li a{display:block;color:#586069;font-family:ngb}
-.header ul li a:hover{color:#000;}
-.cont_main{min-height:1024px;padding:30px 30px 30px 140px}
-.cont_main ul li{padding:20px 20px;font-size:20px}
-.tbl_comm{width:100%;min-width:890px;border-collapse:collapse;border-spacing:0;table-layout:fixed;word-break:keep-all;border-top:1px solid #c8e1ff}
-.tbl_comm tr,.tbl_comm th,.tbl_comm td{border-bottom:1px solid #eaecef}
-.tbl_comm th{padding:15px 10px;background:#f1f8ff;border-left:1px solid #c8e1ff;border-right:1px solid #c8e1ff;border-bottom:1px solid #c8e1ff}
-.tbl_comm td{border-right:1px solid #eaecef;text-align:center;padding:10px 10px}
-.tbl_comm tr a{display:block}
-.tbl_comm tr a:hover{color:#9d9d9d;text-decoration:underline}
-.tbl_comm span{font-size:11px;color:#e43c3c}
-
-.tbl_comm td.border_r{border-right:none}
-.tbl_comm .text_l{text-align:left}
-
+.wrap-cont{
+    display:flex;
+    padding:30px 20px;
+}
+/*tbl-comm layout*/
+.tbl-comm .border-right {
+	border-right:0
+}
+.tbl-comm .item {
+	padding:20px 20px
+}
+.header {
+    flex-shrink:0;
+    width:200px;
+	background:#fff;
+}
+.header h1 {
+	font-size:20px;
+	line-height:25px
+}
+.header h1 a {
+	color:#586069
+}
+.header ul {
+	overflow:hidden;
+	margin-top:15px
+}
+.header ul li {
+	font-size:13px
+}
+.header ul li a {
+	display:block;
+	color:#586069;
+	font-family:ngb
+}
+.header ul li a:hover {
+	color:#000;
+}
+.cont-main {
+    flex:1;
+    min-width:1024px;
+	/* padding:30px 30px 30px 140px */
+}
+.tbl-comm {
+	width:100%;
+	/* min-width:890px; */
+	border-collapse:collapse;
+	border-spacing:0;
+	table-layout:fixed;
+	word-break:keep-all;
+	border-top:1px solid #c8e1ff
+}
+.tbl-comm tr,.tbl-comm th,.tbl-comm td {
+	border-bottom:1px solid #eaecef
+}
+.tbl-comm th {
+	padding:15px 10px;
+	background:#f1f8ff;
+	border-left:1px solid #c8e1ff;
+	border-right:1px solid #c8e1ff;
+	border-bottom:1px solid #c8e1ff
+}
+.tbl-comm td {
+	border-right:1px solid #eaecef;
+	text-align:center;
+    padding:10px 10px;
+    word-break: break-all;
+}
+.tbl-comm tr a {
+	display:block
+}
+.tbl-comm tr a:hover {
+	color:#9d9d9d;
+	text-decoration:underline
+}
+.tbl-comm span {
+	font-size:11px;
+	color:#e43c3c
+}
+.tbl-comm th {
+	text-align:left;
+}
+.tbl-comm td {
+	text-align:left
+}
+.tbl-comm .border-right {
+	border-right:none
+}
+.tbl-comm .text-left {
+	text-align: left
+}
 /*mobile*/
-.m_header{width:100%;height:35px;background:red;text-align:center;padding-top:15px;}
-.m_header h1{color:#fff;font-size:20px;font-width:bold;}
-.m_content {width:100%;height:500px;background:blue;padding-top:100px;background:url(/common/image/img_main01.jpg) no-repeat;background-size:cover}
-.m_content ul li{float:left;width:50%;box-sizing:border-box;}
-.m_content  li a{display:block;margin:0 5px 10px;text-align:center;padding:80px 0 15px;background:url(/common/image/icon_menu01.png) no-repeat center 15px rgba(255,255,255,0.8);background-size:50px;}
+.m_header {
+	width:100%;
+	height:35px;
+	background:red;
+	text-align:center;
+	padding-top:15px;
+}
+.m_header h1 {
+	color:#fff;
+	font-size:20px;
+	font-weight:bold;
+}
+.m_content {
+	width:100%;
+	height:500px;
+	background:blue;
+	padding-top:100px;
+	background:url(/common/image/img_main01.jpg) no-repeat;
+	background-size:cover
+}
+.m_content ul li {
+	float:left;
+	width:50%;
+	box-sizing:border-box;
+}
+.m_content li a {
+	display:block;
+	margin:0 5px 10px;
+	text-align:center;
+	padding:80px 0 15px;
+	background:url(/common/image/icon_menu01.png) no-repeat center 15px rgba(255,255,255,0.8);
+	background-size: 50px;
+}
+
+.color-red{
+    color:red;
+}
+.list-text li{
+    padding-left:10px;
+    text-indent: -9px;
+    font-size:12px;
+}
+.list-text li + li{
+    padding-top:10px;
+}
 
 
+@media screen and (min-width:890px){
+    .tbl-comm{
+        overflow-x:scroll;
+    }
+}
