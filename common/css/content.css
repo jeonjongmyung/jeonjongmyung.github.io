@@ -1,5 +1,19 @@
 @charset "utf-8";
 
-.cont_main .info_txt01{float:left;margin-right:30px;padding:30px 30px;background:#f5f5f5}
-.cont_main .info_txt02{float:left;padding:30px 30px;background:#f5f5f5}
-.cont_main .info_txt01 ul li{font-size:12px;padding:0;margin-bottom:5px;}
+
+.cont-main .info-txt01 {
+	float:left;
+	margin-right:30px;
+	padding:30px 30px;
+	background:#f5f5f5
+}
+.cont-main .info-txt02 {
+	float:left;
+	padding:30px 30px;
+	background:#f5f5f5
+}
+.cont-main .info-txt01 ul li {
+	font-size:12px;
+	padding:0;
+	margin-bottom: 5px;
+}
