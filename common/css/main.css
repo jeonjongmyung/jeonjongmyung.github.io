@@ -68,11 +68,12 @@
     word-break: break-all;
 }
 .tbl-comm tr a {
-	display:block
+    display:block;
+    text-decoration:underline
 }
 .tbl-comm tr a:hover {
 	color:#9d9d9d;
-	text-decoration:underline
+	
 }
 .tbl-comm span {
 	font-size:11px;
