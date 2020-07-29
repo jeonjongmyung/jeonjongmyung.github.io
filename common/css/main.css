@@ -138,6 +138,13 @@
     padding-top:10px;
 }
 
+.list-menu{
+	display:flex;
+}
+.list-menu li + li{
+	margin-left:10px;
+}
+
 
 @media screen and (min-width:890px){
     .tbl-comm{
